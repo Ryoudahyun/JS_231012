@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function</title>
+</head>
+<body>
+	<script>
+		var result;
+		
+		function add(x, y) {
+	
+			return x + y;
+		}
+		
+		var calSum = add; //복잡한 로직에서는 이렇게 사용하기도 함
+		//add(1,2);
+		
+		document.write("결과: " + calSum(5, 10) + "<p/>")
+	</script>
+</body>
+</html>

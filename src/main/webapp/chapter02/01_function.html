@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function</title>
+</head>
+<body>
+	<input type="text" id = "test" /> <!-- id 식별자. script 아래에 넣으면 읽지 못함 -->
+	<br>
+	<script>
+		var text1 = "함수 선언 전 호출";
+		var text2 = "함수 선언 후 호출";
+		
+		printMsg(text1); // 함수 선언 전에 출력 // 자바스크립트가 순차지향형이지만 script태그 안에서는 비동기적(순차x, 동시 여러 작업)이라 오류나지 않음.
+		
+		function printMsg(msg){
+			document.write("함수 호출 메세지: " + msg + "<br>")
+		}
+		
+		printMsg(text2); // 함수 선언 후에 출력
+	</script>
+</body>
+</html>

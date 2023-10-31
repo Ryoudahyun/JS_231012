@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Base</title>
+</head>
+<body>
+	<input type="button" id="soldesk" value="Hello World" />
+	<script type="text/javascript">
+		var soldesk = document.getElementById('soldesk'); //var: type을 정해주지 않아도 됨. 자동으로 정해줌
+		soldesk.addEventListener('click', function(){	//addEventListener: 이벤트를 일으키겠다. click: 클릭을 하면 alert: 알림창을 띄어야지
+			alert('Hello World');
+		});
+	</script>
+</body>
+</html>
